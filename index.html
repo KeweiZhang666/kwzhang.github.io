@@ -1,67 +1,274 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Kewei's homepage</title>
-<meta name="google-site-verification" content="TgL7clZqAJqkNB4dIZ4kQ-8INIszvmtKEGqof1IJV-s" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="TgL7clZqAJqkNB4dIZ4kQ-8INIszvmtKEGqof1IJV-s">
+  <title>Kewei Zhang</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff;
+      color: #222;
+      font-family: Georgia, "Times New Roman", "Noto Serif CJK SC", serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 38px 28px 60px;
+    }
+
+    header {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 1.6rem;
+      padding-bottom: 1.3rem;
+    }
+
+    header::after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+
+    h1,
+    h2 {
+      font-weight: 500;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: 2.05rem;
+      margin: 0 0 0.35rem;
+    }
+
+    h2 {
+      border-bottom: 1px solid #e4e4e4;
+      font-size: 1.35rem;
+      margin: 0 0 0.85rem;
+      padding-bottom: 0.25rem;
+    }
+
+    section {
+      margin-top: 1.8rem;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .name-cn {
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-left: 0.25em;
+    }
+
+    .contact {
+      color: #444;
+      font-size: 1.02rem;
+      margin: 0 0 1rem;
+    }
+
+    .profile-figure {
+      float: right;
+      margin: 0.1rem 0 1rem 2rem;
+      max-width: 360px;
+      width: 42%;
+    }
+
+    .profile-figure img {
+      background: #fff;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      height: auto;
+      padding: 4px;
+      width: 100%;
+    }
+
+    .profile-figure figcaption {
+      color: #666;
+      font-size: 0.86rem;
+      margin-top: 0.35rem;
+      text-align: center;
+    }
+
+    .intro p {
+      margin: 0.45rem 0;
+      max-width: 640px;
+    }
+
+    .site-nav {
+      font-size: 0.96rem;
+      margin-top: 1rem;
+    }
+
+    .site-nav a {
+      display: inline-block;
+      margin: 0 1rem 0.25rem 0;
+      white-space: nowrap;
+    }
+
+    .link-list,
+    .publication-list {
+      margin: 0.5rem 0 0 1.25rem;
+      padding: 0;
+    }
+
+    .link-list li,
+    .publication-list li {
+      margin: 0.55rem 0;
+    }
+
+    li::marker {
+      color: #777;
+    }
+
+    .notice {
+      border-left: 3px solid #b22222;
+      color: #6b1f1f;
+      margin: 0.2rem 0 0.9rem;
+      padding: 0.25rem 0 0.25rem 0.75rem;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding: 28px 18px 44px;
+      }
+
+      .profile-figure {
+        float: none;
+        margin: 1rem 0;
+        max-width: 420px;
+        width: 100%;
+      }
+
+      .site-nav a {
+        margin-right: 0.8rem;
+      }
+    }
+  </style>
 </head>
-<body style="background-color:white;">
+<body>
+  <main class="page">
+    <header>
+      <figure class="profile-figure">
+        <img src="https://keweizhang666.github.io/kwzhang.github.io/blow_up_of_X_k.jpg" alt="A diagram from complex geometry">
+        <figcaption>A picture from complex geometry</figcaption>
+      </figure>
 
+      <h1>Kewei Zhang <span class="name-cn">张科伟</span></h1>
+      <p class="contact">kwzhang at bnu dot edu dot cn &nbsp;|&nbsp; kwzhang at pku dot edu dot cn</p>
 
-<hr>
+      <div class="intro">
+        <p>I am a professor at <a href="http://math.bnu.edu.cn/jzg/szdw/z/236558.htm">Beijing Normal University</a>.</p>
+        <p>I was a postdoc at <a href="http://bicmr.pku.edu.cn">BICMR</a> during 2019-2021.</p>
+        <p>I completed my Ph.D. in 2019 at Peking University, China.</p>
+        <p>I was also a visiting student at the University of Maryland during 2017-2018.</p>
+        <p>My research interests include complex geometry, algebraic geometry, and geometric PDE.</p>
+      </div>
 
+      <nav class="site-nav" aria-label="Homepage sections">
+        <a href="#publications">Publications</a>
+        <a href="#ai-notes">AI Notes</a>
+        <a href="#surveys">Surveys</a>
+        <a href="#notes-slides">Notes and Slides</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
+    </header>
 
-<img src="https://keweizhang666.github.io/kwzhang.github.io/blow_up_of_X_k.jpg" width="500" height="340" align="right">
+    <section id="links">
+      <h2>Links</h2>
+      <ul class="link-list">
+        <li><a href="https://space.bilibili.com/285074284">Bilibili channel</a>: mathematics videos and occasional notes outside mathematics.</li>
+        <li><a href="https://keweizhang666.github.io/kwzhang.github.io/thesis.pdf">Ph.D. thesis</a>.</li>
+      </ul>
+    </section>
 
+    <section id="publications">
+      <h2>Publications and Preprints</h2>
+      <ul class="publication-list">
+        <li>C. Li, M. Miao, K. Zhang, The sharp volume gap for Kähler manifolds with positive Ricci curvature, <a href="https://arxiv.org/pdf/2608.08193">arXiv:2608.08193</a>, 2026, preprint.</li>
+        <li>T. Darvas, K. Zhang, A YTD correspondence for constant scalar curvature metrics, <a href="https://arxiv.org/pdf/2509.15173">arXiv:2509.15173</a>, 2025, preprint.</li>
+        <li>K. Zhang, Quantized volume comparison for Fano manifolds, <a href="https://arxiv.org/pdf/2503.16766">arXiv:2503.16766</a>, Proc. Amer. Math. Soc. 153 (2025), no. 10, 4379-4385.</li>
+        <li>K. Zhang, Reduced delta invariant and Kähler-Einstein metrics, <a href="https://doi.org/10.1007/s42543-024-00093-9">Peking Math. J. (2024)</a>, <a href="https://keweizhang666.github.io/kwzhang.github.io/PMJ.pdf">published version</a>.</li>
+        <li>J. Chu, F. Wang, K. Zhang, The rigidity of eigenvalues on Kähler manifolds with positive Ricci lower bound, <a href="https://arxiv.org/pdf/2401.15830.pdf">arXiv:2401.15830</a>, J. Reine Angew. Math. 820 (2025), 213-233.</li>
+        <li>K. Zhang, The Ricci iteration towards cscK metrics, <a href="https://arxiv.org/pdf/2311.15524.pdf">arXiv:2311.15524</a>, Adv. Math. 475 (2025), Paper No. 110340, 29 pp.</li>
+        <li>T. Darvas, R. Reboulet, D. Witt Nyström, M. Xia, K. Zhang, Transcendental Okounkov bodies, <a href="https://arxiv.org/pdf/2309.07584.pdf">arXiv:2309.07584</a>, J. Differential Geom. 132 (2026), no. 1, 135-178.</li>
+        <li>T. Darvas, M. Xia, K. Zhang, A transcendental approach to non-Archimedean metrics of pseudoeffective classes, <a href="https://arxiv.org/pdf/2302.02541.pdf">arXiv:2302.02541</a>, Comment. Math. Helv. 100 (2025), no. 2, 269-322.</li>
+        <li>T. Darvas, K. Zhang, Twisted Kähler-Einstein metrics in big classes, <a href="https://arxiv.org/pdf/2208.08324.pdf">arXiv:2208.08324</a>, Comm. Pure Appl. Math. 77 (2024), no. 12, 4289-4327.</li>
+        <li>Y. Ji, Y. A. Rubinstein, K. Zhang, Eguchi-Hanson metrics arising from Kähler-Einstein edge metrics, <a href="https://arxiv.org/pdf/2111.00652.pdf">arXiv:2111.00652</a>, J. Topol. Anal. (2024), <a href="https://doi.org/10.1142/S1793525324500328">doi</a>.</li>
+        <li>K. Zhang, Filtrations and Chow stability revisited, 2021, <a href="https://keweizhang666.github.io/kwzhang.github.io/S_S_m.pdf">English translation</a> of my Chinese article: Acta Math. Sinica (Chinese Ser.) 65 (2022), no. 6, 1033-1044.</li>
+        <li>K. Zhang, A quantization proof of the uniform Yau-Tian-Donaldson conjecture, <a href="https://arxiv.org/pdf/2102.02438.pdf">arXiv:2102.02438</a>, J. Eur. Math. Soc. 26 (2024), no. 12, 4763-4778.</li>
+        <li>K. Zhang, Valuative invariants with higher moments, <a href="https://arxiv.org/pdf/2012.04856.pdf">arXiv:2012.04856</a>, J. Geom. Anal. 32 (2022), no. 1, Paper No. 10, 33 pp.</li>
+        <li>Y. A. Rubinstein, G. Tian, K. Zhang, Basis divisors and balanced metrics, <a href="https://arxiv.org/pdf/2008.08829.pdf">arXiv:2008.08829</a>, J. Reine Angew. Math. 778 (2021), 171-218.</li>
+        <li>Y. A. Rubinstein, K. Zhang, Angle deformation of Kähler-Einstein edge metrics on Hirzebruch surfaces, <a href="https://arxiv.org/pdf/2011.12666.pdf">arXiv:2011.12666</a>, Pure Appl. Math. Q. 18 (2022), no. 1, 343-366.</li>
+        <li>K. Zhang, Continuity of delta invariants and twisted Kähler-Einstein metrics, <a href="https://arxiv.org/pdf/2003.11858.pdf">arXiv:2003.11858</a>, Adv. Math. 388 (2021), Paper No. 107888, 25 pp.</li>
+        <li>K. Zhang, C. Zhou, Delta invariants of projective bundles and projective cones of Fano type, <a href="https://arxiv.org/pdf/2003.06839.pdf">arXiv:2003.06839</a>, Math. Z. 300 (2022), no. 1, 179-207.</li>
+        <li>K. Zhang, On the optimal volume upper bound for Kähler manifolds with positive Ricci curvature (with an appendix by Y. Liu), <a href="https://arxiv.org/pdf/2001.04169.pdf">arXiv:2001.04169</a>, Int. Math. Res. Not. IMRN 2022, no. 8, 6135-6156.</li>
+        <li>K. Zhang, Some refinements of the partial C<sup>0</sup> estimate, <a href="https://arxiv.org/pdf/1911.11328.pdf">arXiv:1911.11328</a>, Anal. PDE 14 (2021), no. 7, 2307-2326.</li>
+        <li>K. Fujita, Y. Liu, H. Süss, K. Zhang, Z. Zhuang, On the Cheltsov-Rubinstein conjecture, <a href="https://arxiv.org/pdf/1907.02727.pdf">arXiv:1907.02727</a>, Springer Proc. Math. Stat. 409, Springer, Cham, 2023, 865-883.</li>
+        <li>Y. A. Rubinstein, K. Zhang, Small angle limits of Hamilton's footballs, <a href="https://arxiv.org/pdf/1905.00865.pdf">arXiv:1905.00865</a>, Bull. Lond. Math. Soc. 52 (2020), no. 1, 189-199.</li>
+        <li>I. Cheltsov, K. Zhang, Delta invariants of smooth cubic surfaces, <a href="https://arxiv.org/pdf/1807.08960.pdf">arXiv:1807.08960</a>, Eur. J. Math. 5 (2019), 729-762.</li>
+        <li>I. Cheltsov, Y. A. Rubinstein, K. Zhang, Basis log canonical thresholds, local intersection estimates, and asymptotically log del Pezzo surfaces, <a href="https://arxiv.org/pdf/1807.07135.pdf">arXiv:1807.07135</a>, Selecta Math. (N.S.) 25 (2019), Art. 34, 36 pp.</li>
+      </ul>
+    </section>
 
-<h1>Kewei Zhang  张科伟</h1>
+    <section id="ai-notes">
+      <h2>Notes/Papers Generated by AI</h2>
+      <p class="notice">The following papers grew out of my conversations with ChatGPT Pro. I only claim 5.9% of the credit here. Please check the correctness carefully before citing any result below.</p>
+      <ul class="publication-list">
+        <li>ChatGPT 5.6, Upper Bounds for Tian's Alpha Invariant of Smooth Fano Manifolds, <a href="https://keweizhang666.github.io/kwzhang.github.io/GPT-5.pdf">preprint</a>.</li>
+        <li>ChatGPT 5.6, The Second-Volume Problem for Positive Einstein Four-Manifolds, <a href="https://keweizhang666.github.io/kwzhang.github.io/GPT-vol.pdf">preprint</a>.</li>
+        <li>ChatGPT 5.5, Okounkov bodies and Seshadri constants for blow-ups along a smooth subvariety, <a href="https://keweizhang666.github.io/kwzhang.github.io/GPT-6.pdf">preprint</a>.</li>
+      </ul>
+    </section>
 
+    <section id="surveys">
+      <h2>Survey Articles</h2>
+      <ul class="publication-list">
+        <li>K. Zhang, The optimal exponent of certain Moser-Trudinger type inequalities on projective manifolds, <a href="https://keweizhang666.github.io/kwzhang.github.io/YTD2021.pdf">preprint</a>, Surveys in Geometric Analysis 2021, Science Press Beijing.</li>
+        <li>K. Zhang, Stability threshold and canonical metrics, <a href="https://keweizhang666.github.io/kwzhang.github.io/Survey_delta.pdf">preprint</a>, Surveys in Geometric Analysis 2020, Science Press Beijing.</li>
+        <li>K. Zhang, The greatest Ricci lower bound and stability threshold, <a href="https://keweizhang666.github.io/kwzhang.github.io/Survey_beta.pdf">available here</a>, Surveys in Geometric Analysis 2019, Science Press Beijing.</li>
+      </ul>
+    </section>
 
+    <section id="notes-slides">
+      <h2>Notes and Slides</h2>
+      <ul class="publication-list">
+        <li>A quantization approach to the cscK problem, 2025, <a href="https://keweizhang666.github.io/kwzhang.github.io/YTD-cscK.pdf">slides</a>.</li>
+        <li>Analytic thresholds, canonical metrics and Okounkov bodies, 2024, <a href="https://keweizhang666.github.io/kwzhang.github.io/Col.pdf">slides</a>.</li>
+        <li>The Ricci iteration towards cscK metrics, 2023, <a href="https://keweizhang666.github.io/kwzhang.github.io/bit.pdf">slides</a>.</li>
+        <li>Convex bodies associated to Kähler manifolds, 2023, <a href="https://keweizhang666.github.io/kwzhang.github.io/XinJiang.pdf">slides</a>.</li>
+        <li>A pluripotential proof of the uniform YTD conjecture, 2022, <a href="https://keweizhang666.github.io/kwzhang.github.io/YTD_big.pdf">slides</a>.</li>
+        <li>Lectures on the quantization proof of the uniform YTD conjecture, 2022, <a href="https://keweizhang666.github.io/kwzhang.github.io/Tsinghua.pdf">slides</a>.</li>
+        <li>The delta invariants of projective bundles, 2020, <a href="https://keweizhang666.github.io/kwzhang.github.io/delta-proj-budle.pdf">draft</a>.</li>
+        <li>Bounding the volume of Kähler manifolds with positive Ricci curvature, 2019, <a href="https://keweizhang666.github.io/kwzhang.github.io/Optimal_volume_bound.pdf">draft</a>.</li>
+        <li>A remark on alpha_G invariant, 2019, <a href="https://keweizhang666.github.io/kwzhang.github.io/A_remark_on_alpha_G_invariant.pdf">notes</a>.</li>
+        <li>Stability thresholds of Fano T-varieties of complexity one, 2018, <a href="https://keweizhang666.github.io/kwzhang.github.io/Stability_thresholds_on_Fano_T_varieties-2.pdf">draft</a>.</li>
+      </ul>
+    </section>
 
-<p>
-<h3>kwzhang at bnu dot edu dot cn, kwzhang at pku dot edu dot cn</h3> 
-</p>
-
-<p>
-I am a professor at <a href="http://math.bnu.edu.cn/jzg/szdw/z/236558.htm">Beijing Normal University</a>.
-</p>
-
-<p>
-I was a postdoc at <a href="http://bicmr.pku.edu.cn">BICMR</a> during 2019-2021.
-</p>
-
-<p>
-I completed my PhD in 2019 at Peking University, China.
-</p>
-
-        <p>
-I was also a visiting student at University of Maryland during 2017-2018.
-</p>
-
-<p>
-My interest lies in complex geometry, algebriac geometry and geometric PDE.
-</p>
-
-<hr>
-
-
-<h2><a href="https://space.bilibili.com/285074284?spm_id_from=333.337.0.0">Find more on my Bilibili Channel</a></h2>
-This is a channel for math and baby care :)
-
-
-<hr>
-
-<h2>Publications and preprints</h2>
-
-
-        <p>
-    • C. Li, M. Miao, K. Zhang, The sharp volume gap for Kähler manifolds with positive Ricci curvature, <a href="https://arxiv.org/pdf/2608.08193">arXiv:2608.08193</a>, 2026, preprint.
-<p>
-
-        <p>
-    • T. Darvas, K. Zhang, A YTD correspondence for constant scalar curvature metrics, arXiv:2509.15173, <a href="https://arxiv.org/pdf/2509.15173">arXiv:2509.15173</a>, 2025, preprint.
-<p>
-
-    <p>
-    • K. Zhang, Quantized volume comparison for Fano manifolds, <a href="https://arxiv.org/pdf/2503.16766">arXiv:2503.16766</a>, Proc. Amer. Math. Soc. 153 (2025), no. 10, 4379–4385.
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul class="publication-list">
+        <li><a href="https://keweizhang666.github.io/kwzhang.github.io/ComplexGeometry">Complex Geometry</a>, Summer School of BICMR, 2021.</li>
+        <li><a href="https://www.bilibili.com/video/BV17M411n7vE/">Calculus</a>, undergraduate course at BNU, 2022.</li>
+        <li><a href="https://www.bilibili.com/video/BV1i841187Ut/">Complex Analysis</a>, undergraduate course at BNU, 2023.</li>
+        <li><a href="https://www.bilibili.com/video/BV1SG411d7v4/">Undergraduate Algebraic Geometry</a>, undergraduate course at BNU, 2023.</li>
+        <li><a href="https://www.bilibili.com/video/BV1o4421Q7ne/">Introduction to Riemann Surfaces</a>, undergraduate course at BNU, 2024.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>    • K. Zhang, Quantized volume comparison for Fano manifolds, <a href="https://arxiv.org/pdf/2503.16766">arXiv:2503.16766</a>, Proc. Amer. Math. Soc. 153 (2025), no. 10, 4379–4385.
 <p>
 
 <p>
